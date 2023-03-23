@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+	<html>
+		<head>
+		<meta charset="UTF-8">
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+		<link rel="stylesheet" href="CSS/Style.css">		
+		<title>Калориен калкулатор</title>
+		</head>
+		
+		<body>		
+			<div class="main">									
+				<h1 class="pname">Калориен калкулатор</h1>
+                <p>За да получите общите калории, от които имате нужда, за да поддържате в норма и здраве жлезите с вътрешна секреция,
+                    всички системи и тъкани, сърцето и мозъка, както и всичко останало в тялото ви, умножете вашето БНМ по съответните коефициенти,
+                    определящи вашият тип на живот – активност. След като сте получили калориите от формулата и сте умножили по индекса, съответстващ на ежедневието ви,
+                    ще получите калориите, необходими ви да живеете здравословно и правилно!</p>                  
+                    Write to Пламен Минков			
+				
+				<form name="myform" method="" action="" style="text-align: center;">
+					<legend class="form-label">Вашите данни</legend>
+					<fieldset class="row mt-3">
+						<div class="col">
+							<div class="form-check form-check-inline">
+								<input class="form-check-input" type="radio" value="male" name="sex">
+								<label class="form-check-label">
+									Мъж
+								</label>
+							  </div>
+		
+							<div class="form-check form-check-inline">
+								<input class="form-check-input" type="radio" value="female" name="sex">
+								<label class="form-check-label">
+									Жена
+								</label>
+							</div>
+						</div>
+					</fieldset>
+		
+					<div class="container">
+						<div class="row justify-content-md-center mt-3">
+							<div class="col-2 align-self-center">
+								<label class="form-label">Тегло</label>
+								<input type="number" class="form-control" name="weight" placeholder="Тегло">
+					  		</div>
+						</div>
+					</div>
+		
+					<div class="container">
+						<div class="row justify-content-md-center mt-3">
+							<div class="col-2 align-self-center">
+								<label class="form-label">Ръст</label>
+								<input type="number" class="form-control" name="height" placeholder="Ръст">
+							</div>
+						</div>					  
+					</div>
+		
+					<div class="container">
+						<div class="row justify-content-md-center mt-3">
+							<div class="col-2 align-self-center">
+								<label class="form-label">Години</label>
+								<input type="number" class="form-control" name="age" placeholder="Години">
+							</div>
+						</div>
+					</div>
+		
+					<fieldset class="row mt-3">
+						<div class="col">
+							<div class="form-check form-check-inline">
+								<input class="form-check-input" type="radio" value="1.2" name="activity">
+								<label class="form-check-label">
+									<span class="tt" data-bs-placement="top" title="Живот и ежедневие с малко движение или тренировки.">Минимална</span>
+								</label>
+							  </div>
+							<div class="form-check form-check-inline">
+								<input class="form-check-input" type="radio" value="1.375" name="activity">
+								<label class="form-check-label">
+									<span class="tt" data-bs-placement="top" title="Живот и ежедневие с леки, тонизиращи тренировки и занимания, 1 до 3 пъти седмично.">Слаба</span>
+								</label>
+							</div>
+							<div class="form-check form-check-inline">
+								<input class="form-check-input" type="radio" value="1.55" name="activity">
+								<label class="form-check-label">
+									<span class="tt" data-bs-placement="top" title="Живот и ежедневие с умерено тежки, редовни ди 3-5 пъти седмично физически занимания.">Умерена</span>
+								</label>
+							</div>
+							<div class="form-check form-check-inline">
+								<input class="form-check-input" type="radio" value="1.725" name="activity">
+								<label class="form-check-label">
+									<span class="tt" data-bs-placement="top" title="Живот и ежедневие със тренировки до 6-7 пъти седмично.">Висока</span>								
+								</label>
+							</div>
+						</div>
+					</fieldset>
+					<div id="calories">
+					</div></br>
+					<button type="button" class="btn btn-primary" onclick="return calculateCalories()" value="Изчисли калории">Изчисли</button>
+				  </form>
+			</div>
+
+			<script src="JS/calculator-logic.js"></script>
+			<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+			<script src="JS/tooltips.js"></script>
+			
+		</body>
+	</html>
