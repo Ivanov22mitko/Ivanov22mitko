@@ -14,9 +14,12 @@
                     всички системи и тъкани, сърцето и мозъка, както и всичко останало в тялото ви, умножете вашето БНМ по съответните коефициенти,
                     определящи вашият тип на живот – активност. След като сте получили калориите от формулата и сте умножили по индекса, съответстващ на ежедневието ви,
                     ще получите калориите, необходими ви да живеете здравословно и правилно!</p>                  
-                    Write to Пламен Минков			
-				
-				<form name="myform" method="" action="" style="text-align: center;">
+                    Write to Пламен Минков	
+
+					<div class="card mx-auto">
+						<div class="card-body">
+
+				<form name="myform" method="" action="">
 					<legend class="form-label">Вашите данни</legend>
 					<fieldset class="row mt-3">
 						<div class="col">
@@ -38,7 +41,7 @@
 		
 					<div class="container">
 						<div class="row justify-content-md-center mt-3">
-							<div class="col-2 align-self-center">
+							<div class="col-4 align-self-center">
 								<label class="form-label">Тегло</label>
 								<input type="number" class="form-control" name="weight" placeholder="Тегло">
 					  		</div>
@@ -47,7 +50,7 @@
 		
 					<div class="container">
 						<div class="row justify-content-md-center mt-3">
-							<div class="col-2 align-self-center">
+							<div class="col-4 align-self-center">
 								<label class="form-label">Ръст</label>
 								<input type="number" class="form-control" name="height" placeholder="Ръст">
 							</div>
@@ -56,7 +59,7 @@
 		
 					<div class="container">
 						<div class="row justify-content-md-center mt-3">
-							<div class="col-2 align-self-center">
+							<div class="col-4 align-self-center">
 								<label class="form-label">Години</label>
 								<input type="number" class="form-control" name="age" placeholder="Години">
 							</div>
@@ -93,8 +96,12 @@
 					</fieldset>
 					<div id="calories">
 					</div></br>
-					<button type="button" class="btn btn-primary" onclick="return calculateCalories()" value="Изчисли калории">Изчисли</button>
+					<button type="button" class="btn btn-secondary" onclick="return calculateCalories()" value="Изчисли калории">Изчисли</button>
 				  </form>
+
+				  
+					</div>
+				  </div>				  							  					  
 			</div>
 
 			<script src="JS/calculator-logic.js"></script>
