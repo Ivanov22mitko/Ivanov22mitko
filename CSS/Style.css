@@ -1,0 +1,25 @@
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    margin: 0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background: rgb(152,152,152);
+    background: linear-gradient(150deg, rgba(152,152,152,1) 0%, rgba(255,255,255,1) 25%, rgba(85,85,85,1) 85%, rgba(0,0,0,1) 100%);
+}
+
+.card {
+    background: rgb(187,187,187);
+    background: linear-gradient(270deg, rgba(187,187,187,1) 0%, rgba(255,255,255,1) 15%, rgba(203,203,203,1) 50%, rgba(255,255,255,1) 85%, rgba(187,187,187,1) 100%);
+    width: 30%;
+    border: 10px;
+    border-color: rgb(255, 255, 255);
+    border-style: inset;
+}
+
+form {
+    text-align: center;
+}
